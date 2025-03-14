@@ -1,5 +1,5 @@
 # Home Assistant watermeter addon
-
+This is a fork of nohn/watermeter for allowing easy integration into Home Assistant
 Reads analog water meters and provides a web service that returns the read value as decimal. The needles of the analog gauges currently have to be red.
 
 ### Configuration
