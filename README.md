@@ -1,31 +1,6 @@
-# Read a water meter and returns value
+# Home Assistant watermeter addon
 
 Reads analog water meters and provides a web service that returns the read value as decimal. The needles of the analog gauges currently have to be red.
-
-Turns ![Watermeter](doc/watermeter.jpg) into ```820.5745``` so it can become ![Grafana Screenshot](doc/grafana.png).
-
-[![CI](https://github.com/nohn/watermeter/workflows/CI/badge.svg)](https://github.com/nohn/watermeter/actions/workflows/ci.yml?query=branch%3Amain) [![Docker Hub Pulls](https://img.shields.io/docker/pulls/nohn/watermeter?label=docker%20hub%20pulls)](https://hub.docker.com/r/nohn/watermeter/tags?page=1&ordering=last_updated)
-
-## Getting Started
-
-This is only a quick introduction to setting up and configuring watermeter. A more extensive documentation can be found in [the howto](doc/HOWTO.md).
-
-### Installation
-
-#### Using Docker Compose (recommended)
-
-```yaml
-version: "3.5"
-services:
-  watermeter:
-    image: nohn/watermeter:latest
-    container_name: watermeter
-    volumes:
-      - ./watermeter/config:/usr/src/watermeter/src/config
-    restart: always
-    ports:
-      - "3000:3000"
-```
 
 ### Configuration
 
